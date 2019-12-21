@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewControllerHorarioMonitor">
+   <children>
+      <Label layoutX="102.0" layoutY="27.0" text="Horários de monitoria">
+         <font>
+            <Font name="Times New Roman" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="botaoCadastrar" layoutX="161.0" layoutY="361.0" mnemonicParsing="false" onAction="#acaoBotaoCadastrar" text="Novo horário" />
+      <Button fx:id="botaoVoltar" layoutY="2.0" mnemonicParsing="false" onAction="#acaoBotaoVoltar" text="Voltar" />
+      <ListView fx:id="listHorariosInicio" layoutY="57.0" onMouseClicked="#acaoSelecionarObjetoListaComeco" prefHeight="268.0" prefWidth="204.0" />
+      <ListView fx:id="listHorariosFinal" layoutX="204.0" layoutY="57.0" onMouseClicked="#acaoSelecionarObjetoListaTermino" prefHeight="268.0" prefWidth="204.0" />
+      <Label fx:id="labelApagar" layoutX="99.0" layoutY="337.0" text="Clique no horário que você quer apagar" textFill="RED" />
+      <ToggleButton fx:id="botaoApagar" layoutX="291.0" layoutY="2.0" mnemonicParsing="false" onAction="#mudancaDeEstadoBotaoApagar" prefHeight="25.0" prefWidth="103.0" text="Apagar horário" textFill="RED" />
+   </children>
+</AnchorPane>

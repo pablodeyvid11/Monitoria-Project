@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewControllerPrincipal">
+   <children>
+      <TabPane layoutY="30.0" prefHeight="470.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab closable="false" text="Turmas">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="544.0">
+                     <children>
+                        <ListView fx:id="turmasListView" layoutX="-1.0" layoutY="-1.0" prefHeight="440.0" prefWidth="500.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+    <Button fx:id="botaoSair" layoutX="448.0" layoutY="2.0" minWidth="45.0" mnemonicParsing="false" onAction="#acaoBotaoSair" prefHeight="25.0" text="Sair" />
+      <Button fx:id="botaoCriarTurma" layoutX="7.0" layoutY="2.0" mnemonicParsing="false" onAction="#acaoCriarTurma" text="Nova Turma" />
+      <Button fx:id="botaoMeusDados" layoutX="360.0" layoutY="2.0" mnemonicParsing="false" onAction="#acaoBotaoMeusDados" text="Meus dados" />
+      <Button fx:id="botaoHorarios" layoutX="289.0" layoutY="2.0" mnemonicParsing="false" onAction="#acaoBotaoHorarios" text="Horários" />
+   </children>
+</AnchorPane>
