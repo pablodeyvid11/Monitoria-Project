@@ -24,7 +24,7 @@ public class Memoria {
     
      
     public static  ArrayList<Monitor> monitoresCadastrados;
-    public static File arquivoMonitores = new File("Arquivos/arquivoMonitores.ser");
+    public static File arquivoMonitores = new File("Arquivos/arquivoMonitores.txt");
     public static Monitor monitorLogadoNoMomento;
     public static Turma turmaSelecionada;
 }
