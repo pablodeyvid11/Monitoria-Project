@@ -1,15 +1,24 @@
 package gui;
 
+import java.util.Optional;
+
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.ButtonType;
 
 public class Alerts {
 
-	public static void showAlert(String titulo, String cabecalho, String conteudo, AlertType tipo) {
+	public static int showAlert(String titulo, String cabecalho, String conteudo, AlertType tipo) {
 		Alert alert = new Alert(tipo);
 		alert.setTitle(titulo);
 		alert.setHeaderText(cabecalho);
 		alert.setContentText(conteudo);
-		alert.show();
+
+		Optional<ButtonType> result = alert.showAndWait();
+		if (result.get() == ButtonType.OK){
+		    return 1;
+		} else {
+		    return 0;
+		}
 	}
 }

@@ -19,7 +19,7 @@ public class ViewControllerEntrada {
 	public void acaoBotaoCadstro() {
 		Main.mudarTelaCadastro();
 	}
-	
+
 	@FXML
 	private Button botaoAreaALuno;
 	@FXML

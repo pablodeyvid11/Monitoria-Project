@@ -30,6 +30,9 @@ public class Main extends Application {
 		Memoria.monitorLogadoNoMomento = null;
 		Memoria.turmaSelecionada = null;
 		Memoria.monitoresCadastrados = Serializacao.carregarMonitores();
+		for (Monitor m : Memoria.monitoresCadastrados) {
+			System.out.println(m.getMatricula());
+		}
 		launch(args);
 	}
 
